@@ -63,7 +63,7 @@ function submitAnswers() {
             results.push(`${index}. ${correctAnswer} (O)`);
             correctCount++;
         } else {
-            results.push(`${index}. ${correctAnswer} (X) -> ${answer}`);
+            results.push(`${index}. ${answer} (X) -> ${correctAnswer}`);
         }
     });
 
