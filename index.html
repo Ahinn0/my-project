@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단어 암기 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>단어 암기 게임</h1>
+    <input type="file" id="fileInput" accept=".xlsx">
+    <button onclick="loadFile()">엑셀 파일 업로드</button>
+
+    <h2>모드 선택</h2>
+    <button onclick="startQuiz(1)">스펠링 암기</button>
+    <button onclick="startQuiz(2)">뜻 암기</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
