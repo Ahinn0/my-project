@@ -60,10 +60,10 @@ function submitAnswers() {
         const correctAnswer = quizMode == 1 ? word : meaning;
 
         if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
-            results.push(`${index}. ${correctAnswer} (O)`);
+            results.push(`${index}. (O) ${questionText} {${correctAnswer}`);
             correctCount++;
         } else {
-            results.push(`${index}. ${answer} (X) -> ${correctAnswer}`);
+            results.push(`${index}. (X) ${questionText} ${answer} -> ${correctAnswer}`);
         }
     });
 
